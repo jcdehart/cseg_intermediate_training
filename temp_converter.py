@@ -71,6 +71,12 @@ def celcius_to_kelvin():
 def kelvin_to_celcius():
     return (kelvin - 273.25)
 
+def fahrenheit_to_kelvin():
+    return ((fahrenheit - 32) * 5/9) + 273.25 
+
+def kelvin_to_fahrenheit(kelvin):
+    return ((kelvin - 273.25)*9/5) + 32
+
 if __name__ == "__main__":
     import argparse
     agp = argparse.ArgumentParser()
